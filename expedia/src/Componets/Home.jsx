@@ -1,12 +1,13 @@
-import { Heading } from "@chakra-ui/react";
 import Navbar from "./NavBar";
+import Body from "./Body";
+import { Box } from "@chakra-ui/react";
 
 function Home() {
   return (
-    <Heading>
+    <Box bgColor={"whiteAlpha.100"}>
       <Navbar />
-      Hello SanVel user
-    </Heading>
+      <Body />
+    </Box>
   );
 }
 

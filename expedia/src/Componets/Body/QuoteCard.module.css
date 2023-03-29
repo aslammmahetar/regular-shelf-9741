@@ -1,0 +1,19 @@
+.bg {
+    background-image: url("./BodyImages/Lucy\ banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-position: center;
+    padding-top: 4rem;
+    /* opacity: 0.8; */
+}
+
+.bg2 {
+    background-image: url("./BodyImages/Day\ Break\ _\ Anime\ Gallery\ _\ Tokyo\ Otaku\ Mode\ \(TOM\)\ Shop_\ Figures\ &\ Merch\ From\ Japan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-position: center;
+    padding-top: 4rem;
+    opacity: 0.9;
+}
