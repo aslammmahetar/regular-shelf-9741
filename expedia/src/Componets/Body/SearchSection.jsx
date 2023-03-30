@@ -27,7 +27,7 @@ function SearchSeaction() {
       boxShadow={"xl"}
       m="auto"
       mt={"45px"}
-      borderRadius="13px"
+      borderRadius="1px"
     >
       <Tabs>
         <Flex justifyContent={"center"}>
@@ -73,12 +73,11 @@ function SearchSeaction() {
                   placeholder="📍 Going To?"
                   p={6}
                   w={{ base: "100%", sm: "100%", md: "100%", lg: "400px" }}
-                ></Input>
+                />
               </Box>
               <Flex
-                // mt="-3"
                 mt={{ base: "4", sm: "4", md: "4", lg: "0" }}
-                direction={"row"}
+                direction={{ base: "column", sm: "column", md: "row" }}
                 justifyContent={"space-between"}
               >
                 <Box>
@@ -101,7 +100,7 @@ function SearchSeaction() {
                     p={6}
                     w={{ base: "100%", sm: "100%", md: "100%", lg: "100%" }}
                     mt="2"
-                    ml={2}
+                    ml={{ base: "0", sm: "0", md: "0", lg: "2" }}
                     placeholder="Select Date and Time"
                     size="md"
                     type="datetime-local"

@@ -1,0 +1,465 @@
+{
+  "Hotels": [
+    {
+      "id": 1,
+      "name": "Courtyard By Marriott Ahmedabad Sindhu Bhavan Road",
+      "location": "Thaltej",
+      "rating": 7.2,
+      "city": "Ahmedabad",
+      "price": "5,100",
+      "image": "https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/11761845.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images": {
+        "img1":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/d4617ea5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/f8321138.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/22d60b61.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/fe1e0696.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":false,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 2,
+      "name": "Crown Plaza Ahmedabad City, an IHG Hotel",
+      "location": "Prahalad Nagar",
+      "rating": 9,
+      "city": "Ahmedabad",
+      "price": "5,121",
+      "image": "https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/03412789.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/30ac1bd8.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/4993c669.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/8312050c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/03412789.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":true,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Holiday Inn Express Ahmdedbad Prahald Nagar",
+      "location": "Prahalad Nagar",
+      "rating": 7,
+      "city": "Ahmedabad",
+      "price": "6,214",
+      "image": "https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/691af98b.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/691af98b.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/089de8a3.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/215b36ba.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/6f74df26.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":false,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":true
+      }
+    },
+    {
+      "id": 4,
+      "name": "Four Points by Sheraton Ahmedabad",
+      "location": "Ellice Brige",
+      "rating": 6.5,
+      "city": "Ahmedabad",
+      "price": "5,850",
+      "image": "https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/df198273.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/c0332146.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/9c074143.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":true,
+        "free-wifi":false,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hyatt Regency Ahmedabad",
+      "location": "Usman Pura",
+      "rating": 5,
+      "city": "Ahmedabad",
+      "price": "9,100",
+      "image": "https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/6d632259.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/74100733.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/e3bd16e7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/564a4802.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/43823220.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":true,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":true
+      }
+    },
+    {
+      "id": 6,
+      "name": "Fair by Marriott Ahmedabad",
+      "location": "Usman Pura",
+      "rating": 6.5,
+      "city": "Ahmedabad",
+      "price": "7,500",
+      "image": "https://images.trvl-media.com/lodging/63000000/62580000/62579400/62579384/f14d2bf5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images": {
+        "img1":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/d4617ea5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/f8321138.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/22d60b61.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/fe1e0696.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":false,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 7,
+      "name": "Fabhotel Cambay Sapphire",
+      "location": "Ahmedabad",
+      "rating": 7.4,
+      "city": "Ahmedabad",
+      "price": "5,250",
+      "image": "https://images.trvl-media.com/lodging/67000000/66050000/66045700/66045681/6934c680.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/30ac1bd8.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/4993c669.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/8312050c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/03412789.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":false,
+        "gym":false
+      }
+    },
+    {
+      "id": 8,
+      "name": "Hotel Elysian Residency",
+      "location": "Ahmedabad",
+      "rating": 5.4,
+      "city": "Ahmedabad",
+      "price": "8,210",
+      "image": "https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/691af98b.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/089de8a3.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/215b36ba.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/6f74df26.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":false,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 9,
+      "name": "Radisson Blu Hotel Ahmedabad",
+      "location": "Vastrapur",
+      "rating": 8.5,
+      "city": "Ahmedabad",
+      "price": "7,120",
+      "image": "https://images.trvl-media.com/lodging/4000000/3020000/3010600/3010597/cf5422bd.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/df198273.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/c0332146.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/9c074143.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":false,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 10,
+      "name": "Fortune landMark - Member ITC Hotel Group",
+      "location": "Usman Pura",
+      "rating": 7.5,
+      "city": "Ahmedabad",
+      "price": "4,230",
+      "image": "https://images.trvl-media.com/lodging/25000000/24060000/24053400/24053399/c2e8fcb7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/74100733.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/e3bd16e7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/564a4802.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/43823220.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 11,
+      "name": "Crown Plaza Ahmedabad City, an IHG Hotel",
+      "location": "Prahalad Nagar",
+      "rating": 9.5,
+      "city": "Ahmedabad",
+      "price": "7,360",
+      "image": "https://images.trvl-media.com/lodging/25000000/24060000/24053400/24053399/6f3ff0db.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/74100733.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/e3bd16e7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/564a4802.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/43823220.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 12,
+      "name": "Lemon Tree Hotel, Ahmedabad",
+      "location": "S.G.Highway",
+      "rating": 7.5,
+      "city": "Ahmedabad",
+      "price": "5,150",
+      "image": "https://images.trvl-media.com/lodging/25000000/24730000/24727500/24727486/ea82bab1.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+         "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/30ac1bd8.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/4993c669.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/8312050c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/03412789.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 13,
+      "name": "ITC Narmada a Luxury Collection Hotel, Ahmedabad",
+      "location": "Vastrapur",
+      "rating": 6.5,
+      "city": "Ahmedabad",
+      "price": "7,450",
+      "image": "https://images.trvl-media.com/lodging/7000000/6020000/6013700/6013638/978a5bb3.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/7000000/6020000/6013700/6013638/9a231205.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/7000000/6020000/6013700/6013638/c99e7881.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/7000000/6020000/6013700/6013638/123bac67.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/7000000/6020000/6013700/6013638/fb0e8c80.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 14,
+      "name": "Fabeexpress Silver Plazas",
+      "location": "Ellice Brige",
+      "rating": 8.5,
+      "city": "Ahmedabad",
+      "price": "5,100",
+      "image": "https://images.trvl-media.com/lodging/4000000/3930000/3929700/3929659/84ba859d.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+       "images":{
+        "img1":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/df198273.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/c0332146.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/9c074143.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 15,
+      "name": "The Ummed Ahmedabd Airport",
+      "location": "Ahmedabad",
+      "rating": 4.5,
+      "city": "Ahmedabad",
+      "price": "8,475",
+      "image": "https://images.trvl-media.com/lodging/3000000/2450000/2445700/2445646/0a78a729.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+       "images":{
+        "img1":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/74100733.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/e3bd16e7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/564a4802.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/43823220.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 16,
+      "name": "The House of MG",
+      "location": "Ahmedabad city center",
+      "rating": 7.5,
+      "city": "Ahmedabad",
+      "price": "4,725",
+      "image": "https://images.trvl-media.com/lodging/22000000/21490000/21488800/21488800/ff8a87f2.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images": {
+        "img1":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/d4617ea5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/f8321138.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/22d60b61.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/fe1e0696.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 17,
+      "name": "Fortune Park - Member ITC Hotel Group",
+      "location": "Ellice Brige",
+      "rating": 6.5,
+      "city": "Ahmedabad",
+      "price": "8,500",
+      "image": "https://images.trvl-media.com/lodging/43000000/42440000/42436200/42436120/2058a569.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/30ac1bd8.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/4993c669.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/8312050c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5450000/5440800/5440709/03412789.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    },
+    {
+      "id": 18,
+      "name": "Krios Hotel",
+      "location": "Vastrapur",
+      "rating": 5.2,
+      "city": "Ahmedabad",
+      "price": "8,975",
+      "image": "https://images.trvl-media.com/lodging/10000000/9500000/9492700/9492669/b1983a54.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+       "images":{
+        "img1":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/691af98b.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/089de8a3.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/215b36ba.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/6000000/5650000/5642800/5642791/6f74df26.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+       "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":true
+      }
+    },
+    {
+      "id": 19,
+      "name": "The Metropole Hotel",
+      "location": "Thaltej",
+      "rating": 9.5,
+      "city": "Ahmedabad",
+      "price": "10,180",
+      "image": "https://images.trvl-media.com/lodging/61000000/60900000/60898200/60898156/389de7b5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+       "images":{
+        "img1":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/b49b873c.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/df198273.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/c0332146.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/3000000/2940000/2936600/2936531/9c074143.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":true,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":false,
+        "gym":false
+      }
+    },
+    {
+      "id": 20,
+      "name": "Novotel Ahmedabad Hotel",
+      "location": "Ahmedabad city center",
+      "rating": 7.5,
+      "city": "Ahmedabad",
+      "price": "2,925",
+      "image": "https://images.trvl-media.com/lodging/7000000/6640000/6634200/6634183/b48f2ebd.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+      "images":{
+        "img1":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/74100733.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img2":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/e3bd16e7.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img3":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/564a4802.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "img4":"https://images.trvl-media.com/lodging/10000000/9660000/9657500/9657444/43823220.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      },
+      "facilites":{
+        "pool":false,
+        "parking":true,
+        "spa":false,
+        "free-wifi":true,
+        "A/c":true,
+        "gym":false
+      }
+    }
+  ]
+}
