@@ -11,16 +11,19 @@ import { FiPenTool } from "react-icons/fi";
 
 const HelpCardsData = [
   {
+    id: 1,
     help: "Change or cancel trip",
     text: "Make Updates to your itinerary or cancel a booking",
     icon: FiPenTool,
   },
   {
+    id: 2,
     help: "Change or cancel trip",
     text: "Make Updates to your itinerary or cancel a booking",
     icon: FiPenTool,
   },
   {
+    id: 3,
     help: "Change or cancel trip",
     text: "Make Updates to your itinerary or cancel a booking",
     icon: FiPenTool,
@@ -35,7 +38,7 @@ function HelpCards() {
         <Grid templateColumns="repeat(3, 1fr)" gap={8}>
           {HelpCardsData.map((el) => {
             return (
-              <>
+              <div key={el.id}>
                 <GridItem
                   w="100%"
                   boxShadow="2xl"
@@ -53,7 +56,7 @@ function HelpCards() {
                   </Box>
                   <Text fontSize={"sm"}>{el.text}</Text>
                 </GridItem>
-              </>
+              </div>
             );
           })}
         </Grid>
