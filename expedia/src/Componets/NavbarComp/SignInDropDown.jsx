@@ -2,16 +2,22 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  Box,
   Image,
   Text,
-  Button,
   MenuItem,
   MenuDivider,
 } from "@chakra-ui/react";
 import { HiUserCircle } from "react-icons/hi";
+import { useContext } from "react";
+import { AuthConetext } from "../Context/AuthContext";
+import FalseAuth from "./falseAuth";
+import TrueAuth from "./TrueAuth";
 
 function SignInDropDown() {
+  const AuthCon = useContext(AuthConetext);
+  const { authstatus } = AuthCon;
+  console.log(AuthCon);
+
   return (
     <Menu>
       <MenuButton
@@ -27,30 +33,8 @@ function SignInDropDown() {
         <HiUserCircle cursor="pointer" />
       </MenuButton>
       <MenuList w={"370px"} color={"gray"}>
-        <Box justifyContent={"center"} p="7">
-          <Image
-            src="https://a.travel-assets.com/pricing-claim/sparkle_white.svg"
-            m={"auto"}
-            mb="3"
-          />
-          <Text fontStyle={"oblique"} size="lg" color={"black"}>
-            Save an average of 15% <br /> on thousands of hotels when you're
-            signed in
-          </Text>
-          <Button colorScheme="messenger" w={"100%"} mt="3">
-            Sign In
-          </Button>
-          <Box
-            display={"flex"}
-            justifyContent={"center"}
-            mt="3"
-            color="#343B53"
-          >
-            <Button variant={"ghost"} fontSize={"lg"} cursor="pointer">
-              Create a free account
-            </Button>
-          </Box>
-        </Box>
+        {authstatus ? <TrueAuth /> : <FalseAuth />}
+        <MenuDivider />
         <MenuList border="none">
           <MenuItem fontSize={"lg"}>List of favorites</MenuItem>
           <MenuItem fontSize={"lg"}>Expedia Rewards</MenuItem>
@@ -65,6 +49,8 @@ function SignInDropDown() {
               w={"7"}
             />
           </MenuItem>
+          <MenuDivider />
+          {authstatus ? <MenuItem fontSize={"lg"}>Sign out</MenuItem> : null}
         </MenuList>
       </MenuList>
     </Menu>
