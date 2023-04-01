@@ -2,15 +2,44 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  Box,
   Image,
   Text,
-  Button,
   MenuItem,
   MenuDivider,
 } from "@chakra-ui/react";
+import { useContext, useEffect, useState } from "react";
+import { AuthConetext } from "../Context/AuthContext";
+import FalseAuth from "./falseAuth";
+import TrueAuth from "./TrueAuth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "../../Firebase/FireBase";
 
 function SignInText() {
+  const AuthCon = useContext(AuthConetext);
+  const { setisAuth } = AuthCon;
+  // console.log(AuthCon);
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        console.log("Hello", user);
+        setUser(user);
+        setisAuth(true);
+      } else {
+        setUser(null);
+        setisAuth(false);
+        // console.log("you are logged out");
+      }
+    });
+  }, []);
+
+  const handleLogOut = () => {
+    signOut(auth);
+    setisAuth(false);
+  };
+
   return (
     <Menu>
       <MenuButton>
@@ -19,30 +48,8 @@ function SignInText() {
         </Text>
       </MenuButton>
       <MenuList w={"370px"} color={"gray"}>
-        <Box justifyContent={"center"} p="7">
-          <Image
-            src="https://a.travel-assets.com/pricing-claim/sparkle_white.svg"
-            m={"auto"}
-            mb="3"
-          />
-          <Text fontStyle={"oblique"} size="lg" color={"black"}>
-            Save an average of 15% <br /> on thousands of hotels when you're
-            signed in
-          </Text>
-          <Button colorScheme="messenger" w={"100%"} mt="3">
-            Sign In
-          </Button>
-          <Box
-            display={"flex"}
-            justifyContent={"center"}
-            mt="3"
-            color="#343B53"
-          >
-            <Button variant={"ghost"} fontSize={"lg"} cursor="pointer">
-              Create a free account
-            </Button>
-          </Box>
-        </Box>
+        {user === null ? <FalseAuth /> : <TrueAuth mail={user.email} />}
+        <MenuDivider />
         <MenuList border="none">
           <MenuItem fontSize={"lg"}>List of favorites</MenuItem>
           <MenuItem fontSize={"lg"}>Expedia Rewards</MenuItem>
@@ -57,6 +64,12 @@ function SignInText() {
               w={"7"}
             />
           </MenuItem>
+          <MenuDivider />
+          {user === null ? null : (
+            <MenuItem fontSize={"lg"} onClick={handleLogOut}>
+              Sign out
+            </MenuItem>
+          )}
         </MenuList>
       </MenuList>
     </Menu>

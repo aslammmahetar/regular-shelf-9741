@@ -6,13 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import { AuthConetextProvider } from './Componets/Context/AuthContext';
+import { FirebaseProvider } from './Componets/Context/HotelsContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
       <AuthConetextProvider>
-        <App />
+        <FirebaseProvider>
+          <App />
+        </FirebaseProvider>
       </AuthConetextProvider>
     </BrowserRouter>
   </ChakraProvider>
