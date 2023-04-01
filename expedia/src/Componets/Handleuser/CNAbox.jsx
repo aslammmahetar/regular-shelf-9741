@@ -20,7 +20,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 const database = getDatabase(app);
 
 const googleProvider = new GoogleAuthProvider();
-console.log(googleProvider);
+// console.log(googleProvider);
 
 function CnaBox() {
   const CnAAuth = useContext(AuthConetext);

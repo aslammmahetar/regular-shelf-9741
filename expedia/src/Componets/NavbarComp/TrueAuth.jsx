@@ -1,6 +1,6 @@
 import { Flex, Box, Text } from "@chakra-ui/react";
 
-function TrueAuth() {
+function TrueAuth({ mail }) {
   return (
     <Flex
       p={7}
@@ -13,7 +13,7 @@ function TrueAuth() {
           Hello Nawab
         </Text>
         <Text opacity={"0.5"} fontSize={"md"}>
-          nawabpvt@gmial.com
+          {mail}
         </Text>
       </Box>
     </Flex>
