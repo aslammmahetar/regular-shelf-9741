@@ -26,7 +26,7 @@ function HotdataCard({ data }) {
           w={"35%"}
           borderTopLeftRadius={"10px"}
           borderBottomLeftRadius={"10px"}
-          src={data.data().image}
+          src={data.image}
         ></Image>
         <Flex
           // border={"red 1px solid"}
@@ -36,9 +36,9 @@ function HotdataCard({ data }) {
         >
           <Stack>
             <Heading as={"h3"} size={"md"}>
-              {data.data().name}
+              {data.name}
             </Heading>
-            <Text>{data.data().location}</Text>
+            <Text>{data.location}</Text>
           </Stack>
           <Spacer></Spacer>
           <Box
@@ -58,7 +58,7 @@ function HotdataCard({ data }) {
               <Text mt={1}>Fully refundable</Text>
               <Text>Fully refundable</Text>
 
-              <Text>Rating : {data.data().rating} / 10 Amazing </Text>
+              <Text>Rating : {data.rating} / 10 Amazing </Text>
             </Box>
             <Stack
               display={"flex"}
@@ -67,7 +67,7 @@ function HotdataCard({ data }) {
             >
               <Text as="s">₹7,499</Text>
               <Heading as={"h3"} size={"lg"}>
-                Price : {data.data().price}
+                Price : {data.price}
               </Heading>
               <Text>included Taxes & Fees</Text>
             </Stack>

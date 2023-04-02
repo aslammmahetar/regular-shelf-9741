@@ -8,7 +8,7 @@
       "city": "Ahmedabad",
       "price": "5,100",
       "image": "https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/11761845.jpg?impolicy=resizecrop&rw=1200&ra=fit",
-      "images": {
+      "images": { 
         "img1":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/d4617ea5.jpg?impolicy=resizecrop&rw=1200&ra=fit",
         "img2":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/f8321138.jpg?impolicy=resizecrop&rw=1200&ra=fit",
         "img3":"https://images.trvl-media.com/lodging/61000000/60410000/60405100/60405041/22d60b61.jpg?impolicy=resizecrop&rw=1200&ra=fit",

@@ -15,6 +15,7 @@ import { AuthConetext } from "../Context/AuthContext";
 import { getDatabase, set, ref } from "firebase/database";
 import { auth } from "../../Firebase/FireBase";
 import { app } from "../../Firebase/FireBase";
+import { Link } from "react-router-dom";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const database = getDatabase(app);
@@ -123,7 +124,9 @@ function CnaBox() {
           Sign In
         </Button>
         <Stack textAlign={"center"} direction="column">
-          <Text>Already have an account? Sign In</Text>
+          <Text>
+            Already have an account? <Link to={"/signin"}>Sign In</Link>
+          </Text>
         </Stack>
       </Stack>
     </Box>

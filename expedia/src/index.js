@@ -12,13 +12,13 @@ import { FirebaseProvider } from './Componets/Context/HotelsContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
-    <BrowserRouter>
-      <AuthConetextProvider>
-        <FirebaseProvider>
+    <AuthConetextProvider>
+      <FirebaseProvider>
+        <BrowserRouter>
           <App />
-        </FirebaseProvider>
-      </AuthConetextProvider>
-    </BrowserRouter>
+        </BrowserRouter>
+      </FirebaseProvider>
+    </AuthConetextProvider>
   </ChakraProvider>
 );
 
