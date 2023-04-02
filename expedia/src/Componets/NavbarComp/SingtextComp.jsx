@@ -13,13 +13,18 @@ import FalseAuth from "./falseAuth";
 import TrueAuth from "./TrueAuth";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../../Firebase/FireBase";
-
+import { useToast } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 function SignInText() {
   const AuthCon = useContext(AuthConetext);
   const { setisAuth } = AuthCon;
   // console.log(AuthCon);
 
+  const navigate = useNavigate();
+
   const [user, setUser] = useState(null);
+
+  const toast = useToast();
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -38,6 +43,13 @@ function SignInText() {
   const handleLogOut = () => {
     signOut(auth);
     setisAuth(false);
+    navigate("/");
+    toast({
+      title: "Logout Successfully",
+      status: "info",
+      duration: 9000,
+      isClosable: true,
+    });
   };
 
   return (
@@ -48,7 +60,15 @@ function SignInText() {
         </Text>
       </MenuButton>
       <MenuList w={"370px"} color={"gray"}>
-        {user === null ? <FalseAuth /> : <TrueAuth mail={user.email} />}
+        {user === null ? (
+          <FalseAuth />
+        ) : (
+          <TrueAuth
+            name={user.displayName}
+            mail={user.email}
+            img={user.photoURL}
+          />
+        )}
         <MenuDivider />
         <MenuList border="none">
           <MenuItem fontSize={"lg"}>List of favorites</MenuItem>

@@ -1,21 +1,39 @@
-import { Heading, Box } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { FireBaseContext } from "../Context/HotelsContext";
-import { useContext, useEffect } from "react";
+// import { FireBaseContext } from "../Context/HotelsContext";
+// import { useContext, useEffect } from "react";
 import Navbar from "../NavBar";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import HotelImages from "./HDImage";
+
+import Footer from "../Footer";
+import Facilites from "./HotelFacilities";
+import AdCard2 from "../Body/AdCard";
 function HotelDetails() {
+  const [data, setData] = useState({});
   const { id } = useParams();
   console.log(id);
-  const { getHotelById } = useContext(FireBaseContext);
 
+  const fetchById = async () => {
+    try {
+      let req = await axios.get(
+        `https://642913ceebb1476fcc42b19c.mockapi.io/hotels/${id}`
+      );
+      setData(req.data);
+      console.log(req.data);
+    } catch (error) {}
+  };
   useEffect(() => {
-    getHotelById(id).then((value) => console.log(value.data()));
+    fetchById();
   }, []);
 
   return (
     <>
       <Navbar />
-      <Box w={"70%"} border={"1px"} h={"100px"}></Box>
+      <HotelImages data={data} />
+      <Facilites data={data} />
+      <AdCard2 />
+      <Footer />
     </>
   );
 }

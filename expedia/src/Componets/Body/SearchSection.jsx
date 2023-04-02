@@ -19,6 +19,7 @@ import {
   PopoverCloseButton,
   Card,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 function SearchSeaction() {
   return (
@@ -163,14 +164,16 @@ function SearchSeaction() {
               </Box>
             </Flex>
             <Box display={"flex"} justifyContent="center" mt="5">
-              <Button
-                colorScheme={"blue"}
-                p={{ base: 6, sm: 6, md: 6, lg: 6 }}
-                pl={{ base: 6, sm: 6, md: 6, lg: 14 }}
-                pr={{ base: 6, sm: 6, md: 6, lg: 14 }}
-              >
-                Search
-              </Button>
+              <Link to={"/hotels"}>
+                <Button
+                  colorScheme={"blue"}
+                  p={{ base: 6, sm: 6, md: 6, lg: 6 }}
+                  pl={{ base: 6, sm: 6, md: 6, lg: 14 }}
+                  pr={{ base: 6, sm: 6, md: 6, lg: 14 }}
+                >
+                  Search
+                </Button>
+              </Link>
             </Box>
           </TabPanel>
           <TabPanel>

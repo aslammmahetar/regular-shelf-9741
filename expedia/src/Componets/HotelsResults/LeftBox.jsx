@@ -22,11 +22,14 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 
-function LeftbBox() {
+function LeftbBox({ getDocsbyQuery, search, handleSearch }) {
+  console.log(search, handleSearch);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const [chaked, setChecked] = useState(false);
+  const [location, setLocation] = useState("");
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
 
@@ -58,12 +61,17 @@ function LeftbBox() {
             <ModalCloseButton />
             <ModalBody pb={6}>
               <FormControl>
-                <Input ref={initialRef} placeholder="e.g. Marriot" />
+                <Input
+                  ref={initialRef}
+                  value={search}
+                  onChange={handleSearch}
+                  placeholder="e.g. Marriot"
+                />
               </FormControl>
             </ModalBody>
 
             <ModalFooter>
-              <Button colorScheme="blue" mr={3}>
+              <Button colorScheme="blue" mr={3} onClick={getDocsbyQuery}>
                 Save
               </Button>
               <Button onClick={onClose}>Cancel</Button>
@@ -80,12 +88,29 @@ function LeftbBox() {
       <Flex direction={"column"}>
         <Text as={"b"}>Popular Filter</Text>
         <Stack spacing={2} mt="2px" direction="column" pl={"5"}>
-          <Checkbox colorScheme="blue">Pool</Checkbox>
-          <Checkbox colorScheme="blue">Parking</Checkbox>
-          <Checkbox colorScheme="blue">Spa</Checkbox>
-          <Checkbox colorScheme="blue">Free-Wifi</Checkbox>
-          <Checkbox colorScheme="blue">A/c</Checkbox>
-          <Checkbox colorScheme="blue">Gym</Checkbox>
+          <Checkbox colorScheme="blue" value={"pool"}>
+            Pool
+          </Checkbox>
+          <Checkbox colorScheme="blue" value={"parking"}>
+            Parking
+          </Checkbox>
+          <Checkbox colorScheme="blue" value={"spa"}>
+            Spa
+          </Checkbox>
+          <Checkbox
+            colorScheme="blue"
+            isChecked={chaked}
+            onChange={(e) => setChecked(e.target.checked)}
+            value={"free-wifi"}
+          >
+            Free-Wifi
+          </Checkbox>
+          <Checkbox colorScheme="blue" value={"a/c"}>
+            A/c
+          </Checkbox>
+          <Checkbox colorScheme="blue" value={"gym"}>
+            Gym
+          </Checkbox>
         </Stack>
       </Flex>
       <Box mt={"12px"}>
@@ -152,11 +177,16 @@ function LeftbBox() {
       <Box mt={"12px"}>
         <Text as={"b"}>Area</Text>
         <RadioGroup>
-          <Stack pl={3} direction="column">
-            <Radio value="vastapur">Vastapur</Radio>
-            <Radio value="thaltej">Thaltej</Radio>
-            <Radio value="ahmedabad">Ahmedabad</Radio>
-          </Stack>
+          <RadioGroup
+            value={location}
+            onChange={(e) => console.log(e.target.value)}
+          >
+            <Stack pl={3} direction="column">
+              <Radio value="vastapur">Vastapur</Radio>
+              <Radio value="thaltej">Thaltej</Radio>
+              <Radio value="ahmedabad">Ahmedabad</Radio>
+            </Stack>
+          </RadioGroup>
         </RadioGroup>
       </Box>
     </Box>

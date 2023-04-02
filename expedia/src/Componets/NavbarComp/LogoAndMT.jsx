@@ -15,11 +15,14 @@ import flight from "../NavbarComp/images/flight_takeoff_FILL0_wght400_GRAD0_opsz
 import Car from "./images/directions_car_FILL0_wght400_GRAD0_opsz48.png";
 import packege from "./images/package_FILL0_wght400_GRAD0_opsz48.png";
 import ticket from "./images/local_activity_FILL0_wght400_GRAD0_opsz48.png";
+import { Link } from "react-router-dom";
 
 function LogoAndMt() {
   return (
     <Flex color={"#343B53"} alignItems={"center"}>
-      <Image src={img} w="150px" mt={"0"}></Image>
+      <Link to="/">
+        <Image src={img} w="150px" mt={"0"}></Image>
+      </Link>
       <Menu isLazy>
         <MenuButton
           as={Button}
@@ -30,9 +33,11 @@ function LogoAndMt() {
           More travel
         </MenuButton>
         <MenuList w={"300px"} color={"gray"}>
-          <MenuItem fontSize={"lg"}>
-            <Image pl={"2"} pr="2" src={Building} w="10" /> Stays
-          </MenuItem>
+          <Link to="/hotels">
+            <MenuItem fontSize={"lg"}>
+              <Image pl={"2"} pr="2" src={Building} w="10" /> Stays
+            </MenuItem>
+          </Link>
           <MenuItem fontSize={"lg"}>
             <Image color={"7D7C84"} pl={"2"} pr="2" src={flight} w="10" />
             Flights

@@ -11,11 +11,16 @@ import {
   InputLeftElement,
   InputRightElement,
 } from "@chakra-ui/react";
+import { auth } from "../../Firebase/FireBase";
 import img from "./img/download1.jpg";
 import { EmailIcon, ViewIcon } from "@chakra-ui/icons";
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthConetext } from "../Context/AuthContext";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { useToast } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+const googleProvider = new GoogleAuthProvider();
 
 function LoginBox() {
   const [show, setShow] = React.useState(false);
@@ -42,6 +47,20 @@ function LoginBox() {
       alert("wrong credential");
     }
   };
+  const toast = useToast();
+
+  const SigninWthGoogle = () => {
+    signInWithPopup(auth, googleProvider);
+    setTimeout(() => {
+      navigate("/");
+      toast({
+        title: "Login Successfully",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    }, 9000);
+  };
 
   return (
     <>
@@ -53,7 +72,7 @@ function LoginBox() {
             Save an average of 15% on thousands of hotels as a member—it’s
             always free.
           </Text>
-          <Button colorScheme={"blue"} w="100%" p={6}>
+          <Button colorScheme={"blue"} w="100%" p={6} onClick={SigninWthGoogle}>
             <Image src={img} borderRadius="5px" mr={"1"} w="30px"></Image>
             Sign in with google
           </Button>
@@ -106,7 +125,10 @@ function LoginBox() {
           </Button>
           <Stack textAlign={"center"} direction="column">
             <Text>Forgot password?</Text>
-            <Text>Don't have an account? Create one</Text>
+            <Text>
+              Don't have an account?{" "}
+              <Link to={"/createaccount"}> Create one </Link>
+            </Text>
           </Stack>
         </Stack>
       </Box>

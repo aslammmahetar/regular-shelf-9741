@@ -1,5 +1,8 @@
-import { createContext, useContext, useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { set, ref } from "firebase/database";
 import { database } from "../../Firebase/FireBase";
 import { auth } from "../../Firebase/FireBase";
@@ -17,7 +20,7 @@ export function AuthConetextProvider({ children }) {
   };
 
   const loginUser = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   return (
