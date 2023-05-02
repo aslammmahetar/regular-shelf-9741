@@ -107,9 +107,11 @@ function Facilites({ data }) {
                 <Text textAlign={"right"} pr={3}>
                   Including tax & Fees
                 </Text>
-                <Button mb={"8"} mt={"5"} colorScheme="blue">
-                  Pay Now
-                </Button>
+                <Link to={`/payment/${data?.id}`}>
+                  <Button w={"100%"} mb={"8"} mt={"5"} colorScheme="blue">
+                    Pay Now
+                  </Button>
+                </Link>
               </Stack>
               <br />
               <Box mt={5}>
